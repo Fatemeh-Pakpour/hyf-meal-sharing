@@ -40,12 +40,15 @@ function renderAllMeals(data) {
     meals.innerHTML = `
             <div class ="featured-meal-sub-container">
                 <div class ="featured-meal-content">
+                <img class= "mb-4 img-fluid rounded center-block"
+                    src="https://source.unsplash.com/300x150?${meal.title}"
+                    alt="${meal.title}" />
                     <h4>${meal.title}</h4>
                     <li>${meal.description}</li>
                     <li>${meal.location}</li>
                     <li>Data ${meal.when}</li>
-                    <li>Price is ${meal.price}</li>
-                    <li>The maximum reservations is ${meal.max_reservations}</li>
+                    <li>Price is ${meal.price} kr</li>
+                    <li>The maximum reservations is ${meal.max_reservations} people</li>
                     <li>${meal.created_date}</li>
                     <div class="btn-group float-right" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-info reservation">Reservation</button>

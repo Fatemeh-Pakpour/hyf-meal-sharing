@@ -19,7 +19,7 @@ function homeRouter(req, router) {
   <div class="col-lg order-lg-2 text-center">
     <h3 class = "my-4">Let's Eat</h3>
     <img  class = "mb-4 img-fluid rounded center-block" src="../assets/mealsharing.jpg" alt="meal sharing">
-    <h4>Discover Home Cooking in 150+ Counties!</h4>
+    <h4>Discover Home Cooking in Copenhagen!</h4>
   </div>
   <div class ="container">
   <h1 class="display-4 text-center my-5 text-muted">Featured Meals</h1>
@@ -38,7 +38,7 @@ const url = "/api/meals";
   }
 function renderFeaturedMeal(data){
     const selectedMeal=data.filter(meal => {
-        return meal.title==="Brazilian Food"|| meal.title==="English clam chowder " || meal.title==="Turkish Food" || meal.title==="Sushi with drink"; 
+        return meal.title==="Pizza"|| meal.title==="Fried rice" || meal.title==="Panini sandwich" || meal.title==="Fruit pies"; 
     });
     console.log(selectedMeal);
    
@@ -49,6 +49,9 @@ function renderFeaturedMeal(data){
             featuredMeals.innerHTML= `
                 <div class ="featured-meal-sub-container">
                     <div class ="featured-meal-content">
+                    <img class= "mb-4 img-fluid rounded center-block"
+                    src="https://source.unsplash.com/300x150?${meal.title}"
+                    alt="${meal.title}" />
                         <h4>${meal.title}</h4>
                         <p>${meal.description}</p>
                     </div>    

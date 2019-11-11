@@ -2,7 +2,7 @@ import "./index.css";
 
 import SPARouter from "@kodnificent/sparouter";
 
-import mealRouter from "./pages/meal";
+import mealRouter from "./pages/meals";
 import homeRouter from "./pages/home";
 import reviewRouter from "./pages/review";
 
