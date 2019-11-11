@@ -48,7 +48,7 @@ function renderFeaturedMeal(data){
             const featuredMealContainer = document.querySelector("#featured-meal-container");
             featuredMeals.innerHTML= `
                 <div class ="featured-meal-sub-container">
-                    <div class ="featured-meal-content">
+                    <div class ="text-center featured-meal-content">
                     <img class= "mb-4 img-fluid rounded center-block"
                     src="https://source.unsplash.com/300x150?${meal.title}"
                     alt="${meal.title}" />
